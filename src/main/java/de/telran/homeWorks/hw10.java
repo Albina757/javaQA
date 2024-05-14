@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-public class hw {
+public class hw10 {
 
     public static void main(String[] args) {
         // Создаем список и наполняем его 10 миллионами элементов
