@@ -72,6 +72,8 @@ public class hw10 {
         endTime = System.currentTimeMillis();
         System.out.println("ListIterator backward: " + (endTime - startTime) + " ms");
     }
+
+    int x =5;
 }
 
 
