@@ -73,7 +73,7 @@ public class hw10 {
         System.out.println("ListIterator backward: " + (endTime - startTime) + " ms");
     }
 
-    int x =5;
+    int x =65;
 }
 
 
