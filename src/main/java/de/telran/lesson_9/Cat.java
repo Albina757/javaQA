@@ -2,17 +2,17 @@ package de.telran.lesson_9;
 
 import java.util.Objects;
 import java.util.Comparator;
-public class Cat implements Comparable<Cat>{
+
+public class Cat implements Comparable<Cat> {
     private String name;
     private int age;
     private int weight;
 
-    public Cat(String name, int age) {
+    public Cat(String name, int age, int weight) {
         this.name = name;
         this.age = age;
+        this.weight = weight;
     }
-
-
 
 
     @Override
@@ -25,7 +25,7 @@ public class Cat implements Comparable<Cat>{
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age);
+        return Objects.hash(name, age, weight);
     }
 
     @Override
@@ -41,8 +41,14 @@ public class Cat implements Comparable<Cat>{
     }
 
     public int getAge() {
+
         return age;
     }
+
+    public int getWeight() {
+        return weight;
+    }
+
     @Override
     //compare this cat with some other cat o;
     public int compareTo(Cat o) {
@@ -53,7 +59,7 @@ public class Cat implements Comparable<Cat>{
             return -1;
         }
         //if (this.age == o.age) {
-            return 0;
+        return 0;
 
     }
 
